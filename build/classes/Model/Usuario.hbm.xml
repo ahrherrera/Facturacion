@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-22-2016 04:28:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Usuario" table="usuario" catalog="facturacion" optimistic-lock="version">
+        <id name="idusuario" type="java.lang.Integer">
+            <column name="idusuario" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="empleado" class="Model.Empleado" fetch="select">
+            <column name="idEmpleado" unique="true" />
+        </many-to-one>
+        <property name="nombreUsuario" type="string">
+            <column name="nombreUsuario" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="contrasenia" type="binary">
+            <column name="contrasenia" not-null="true" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="30" not-null="true" />
+        </property>
+        <property name="estado" type="java.lang.Boolean">
+            <column name="estado" />
+        </property>
+        <property name="roll" type="string">
+            <column name="Roll" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-22-2016 04:28:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Detallecompra" table="detallecompra" catalog="facturacion" optimistic-lock="version">
+        <composite-id name="id" class="Model.DetallecompraId">
+            <key-property name="idProducto" type="int">
+                <column name="idProducto" />
+            </key-property>
+            <key-property name="idCompra" type="int">
+                <column name="idCompra" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="compra" class="Model.Compra" update="false" insert="false" fetch="select">
+            <column name="idCompra" not-null="true" />
+        </many-to-one>
+        <many-to-one name="producto" class="Model.Producto" update="false" insert="false" fetch="select">
+            <column name="idProducto" not-null="true" />
+        </many-to-one>
+        <property name="costo" type="big_decimal">
+            <column name="costo" precision="15" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="cantidadDisponible" type="java.lang.Integer">
+            <column name="cantidadDisponible" />
+        </property>
+    </class>
+</hibernate-mapping>

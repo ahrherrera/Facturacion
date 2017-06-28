@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/Controler/C_Representante.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>26</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/View/Login.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>531</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/View/V_Factura.java</file>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/Controler/C_Factura.java</file>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/Validations/Mensajero.java</file>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/Reports/ReporteInventario.jrxml</file>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/Controler/C_Producto.java</file>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/DAO/ProductoDAO.java</file>
+            <file>file:/C:/Users/ahrhe/Dropbox/Proyecto%20Ing%20Software%20II/Facturacion/src/View/Principal.java</file>
+        </group>
+    </open-files>
+</project-private>

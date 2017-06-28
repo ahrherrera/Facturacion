@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-22-2016 04:28:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Cedula" table="cedula" catalog="facturacion" optimistic-lock="version">
+        <composite-id name="id" class="Model.CedulaId">
+            <key-property name="idCliente" type="int">
+                <column name="idCliente" />
+            </key-property>
+            <key-property name="numeroCedula" type="string">
+                <column name="numeroCedula" length="15" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="cliente" class="Model.Cliente" update="false" insert="false" fetch="select">
+            <column name="idCliente" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
